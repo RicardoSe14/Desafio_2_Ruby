@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Galeria</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%=stylesheet_link_tag "noscript", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "main", "data-turbo-track": "reload" %>
+    
+
+
+  </head>
+
+  <body class="is-preload-0 is-preload-1 is-preload-2">
+    <%= yield %>
+
+<!-- Scripts -->
+  <%= javascript_include_tag "jquery.min" %>
+  <%= javascript_include_tag "browser.min" %>
+  <%= javascript_include_tag "breakpoints.min" %>
+  <%= javascript_include_tag "main" %>
+
+  <script src="https://kit.fontawesome.com/360cd4ba7a.js" crossorigin="anonymous"></script>
+  </body>
+</html>
